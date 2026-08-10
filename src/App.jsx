@@ -1,22 +1,21 @@
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
-import Pricing from './components/Pricing';
-import Team from './components/Team';
-import Testimonials from './components/Testimonials';
-import Booking from './components/Booking';
-import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
+import Home from './pages/Home'
+import Gallery from './Components/Gallery'
+import Pricing from './Components/Pricing'
+import Booking from './Components/Booking'
 
 function App() {
   return (
     <>
-      <Hero />
-      <Services />
-      <Gallery />
-      <Pricing />
-      <Team />
-      <Testimonials />
-      <Booking />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/booking" element={<Booking />} />
+      </Routes>
       <Footer />
     </>
   );

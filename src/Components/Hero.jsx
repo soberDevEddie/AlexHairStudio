@@ -1,11 +1,25 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <div className='vh-50 d-flex justify-content-center align-items-center text-center'>
-      <h1>Welcome to Alex's Hair Studio  </h1>
-      <p className="text-lead">Get the look you've always wanted with our expert stylists.</p>
-    </div>
+    <section className="hero">
+      <div className="hero-inner">
+        <p className="eyebrow">Barbershop &middot; walk-ins welcome</p>
+        <h1 className="section-heading">Welcome to Alex's Hair Studio</h1>
+        <p className="section-sub">
+          Sharp fades, straight-razor shaves, and a chair that isn't in a
+          hurry. Three barbers, one standard.
+        </p>
+        <div className="hero-actions">
+          <Link className="btn-pill" to="/booking">
+            Book appointment
+          </Link>
+          <Link className="btn-pill-ghost" to="/gallery">
+            View our work
+          </Link>
+        </div>
+      </div>
+    </section>
   )
 }
 

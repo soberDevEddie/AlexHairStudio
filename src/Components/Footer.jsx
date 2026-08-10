@@ -1,8 +1,23 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className="site-footer">
+      <div className="footer-inner">
+        <span className="brand">
+          Alex's <span className="accent">Hair Studio</span>
+        </span>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/pricing">Pricing</Link>
+          <Link to="/booking">Booking</Link>
+        </nav>
+        <p className="fine-print">
+          &copy; {new Date().getFullYear()} Alex's Hair Studio. Tue&ndash;Sat, 9am&ndash;7pm.
+        </p>
+      </div>
+    </footer>
   )
 }
 
