@@ -9,6 +9,7 @@ const Footer = () => {
         </span>
         <nav>
           <Link to="/">Home</Link>
+          <Link to="/services">Services</Link>
           <Link to="/gallery">Gallery</Link>
           <Link to="/pricing">Pricing</Link>
           <Link to="/booking">Booking</Link>

@@ -4,26 +4,35 @@ const menus = [
   {
     title: 'Haircuts',
     items: [
-      { name: 'Classic haircut', price: '$32' },
-      { name: 'Skin fade', price: '$38' },
-      { name: 'Buzz cut', price: '$24' },
-      { name: "Kids cut (12 & under)", price: '$22' },
+      { name: "Women's cut — layer cutting", price: '$55' },
+      { name: "Women's cut — linear cutting", price: '$50' },
+      { name: "Men's haircut", price: '$30' },
+      { name: 'Beard trim & shape', price: '$15' },
     ],
   },
   {
-    title: 'Shaves & beard',
+    title: 'Color & styling',
     items: [
-      { name: 'Hot towel shave', price: '$45' },
-      { name: 'Beard trim & line-up', price: '$18' },
-      { name: 'Beard shape & shave combo', price: '$55' },
+      { name: 'Highlights', price: '$95' },
+      { name: 'Color retouch', price: '$70' },
+      { name: 'Straightener or curls', price: '$50' },
+      { name: 'Blowout, dry & peinado', price: '$40' },
     ],
   },
   {
-    title: 'Grooming',
+    title: 'Facials & massage',
     items: [
-      { name: 'Scalp treatment', price: '$15' },
-      { name: 'Hair wash & style', price: '$12' },
-      { name: 'Cut, shave & style combo', price: '$68' },
+      { name: 'Facial treatment', price: '$50' },
+      { name: 'Relaxation massage', price: '$60' },
+    ],
+  },
+  {
+    title: 'Nails & finishing touches',
+    items: [
+      { name: 'Manicure — nail care & polish', price: '$20' },
+      { name: 'Pedicure', price: '$30' },
+      { name: 'Eyebrow shaping', price: '$15' },
+      { name: 'Ear piercing', price: '$25' },
     ],
   },
 ]
@@ -35,14 +44,14 @@ const Pricing = () => {
         <p className="eyebrow">No surprises at the register</p>
         <h2 className="section-heading">Our pricing</h2>
         <p className="section-sub">
-          Every service below includes a consultation with your barber before
-          the first cut.
+          Every service below includes a consultation first. Manicures cover
+          nail care and polish only — we don't apply extensions.
         </p>
       </div>
       <div className="container">
         <div className="row g-4">
           {menus.map((menu) => (
-            <div className="col-12 col-md-4" key={menu.title}>
+            <div className="col-12 col-sm-6 col-lg-3" key={menu.title}>
               <div className="pricing-card">
                 <h3>{menu.title}</h3>
                 <div>

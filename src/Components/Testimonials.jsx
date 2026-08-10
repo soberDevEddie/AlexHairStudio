@@ -1,12 +1,12 @@
 const testimonials = [
   {
     quote:
-      "Been getting my fade here for two years. Never had to explain what I want twice.",
+      "Been getting my color retouched here for two years. Never had to explain what I want twice.",
     who: 'Diego M.',
   },
   {
     quote:
-      "The hot towel shave is worth the drive on its own. Booked in thirty seconds online.",
+      "Booked a facial and a manicure in the same afternoon. Left feeling like a different person.",
     who: 'Priya K.',
   },
   {

@@ -1,16 +1,16 @@
 const team = [
-  { name: 'Alex Rivera', role: 'Owner & barber', initials: 'AR' },
+  { name: 'Alex Rivera', role: 'Owner & colorist', initials: 'AR' },
   { name: 'Marcus Lee', role: 'Barber', initials: 'ML' },
-  { name: 'Sam Okafor', role: 'Barber', initials: 'SO' },
-  { name: 'Jordan Price', role: 'Hair stylist', initials: 'JP' },
+  { name: 'Sam Okafor', role: 'Hair stylist', initials: 'SO' },
+  { name: 'Jordan Price', role: 'Esthetician & nail care', initials: 'JP' },
 ]
 
 const Team = () => {
   return (
     <section className="team-section" id="team">
       <div className="services-head">
-        <p className="eyebrow">Who's cutting</p>
-        <h2 className="section-heading">Our team</h2>
+        <p className="eyebrow">Our people</p>
+        <h2 className="section-heading">Meet the team</h2>
       </div>
       <div className="container">
         <div className="row g-4">

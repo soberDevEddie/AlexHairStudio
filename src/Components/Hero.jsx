@@ -4,11 +4,11 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-inner">
-        <p className="eyebrow">Barbershop &middot; walk-ins welcome</p>
+        <p className="eyebrow">Hair &amp; beauty studio &middot; walk-ins welcome</p>
         <h1 className="section-heading">Welcome to Alex's Hair Studio</h1>
         <p className="section-sub">
-          Sharp fades, straight-razor shaves, and a chair that isn't in a
-          hurry. Three barbers, one standard.
+          Haircuts and color for the whole family, plus the beard trims,
+          facials, and nail care that finish the look.
         </p>
         <div className="hero-actions">
           <Link className="btn-pill" to="/booking">

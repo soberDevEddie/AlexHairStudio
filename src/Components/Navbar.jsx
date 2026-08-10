@@ -29,6 +29,9 @@ const Navbar = () => {
             <NavLink className={navLinkClass} to="/" end onClick={() => setOpen(false)}>
               Home
             </NavLink>
+            <NavLink className={navLinkClass} to="/services" onClick={() => setOpen(false)}>
+              Services
+            </NavLink>
             <NavLink className={navLinkClass} to="/gallery" onClick={() => setOpen(false)}>
               Gallery
             </NavLink>
