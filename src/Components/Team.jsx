@@ -1,5 +1,5 @@
 const team = [
-  { name: 'Alex Rivera', role: 'Owner & colorist', initials: 'AR' },
+  { name: 'Alex Delgado', role: 'Owner & colorist', initials: 'AD' },
   { name: 'Marcus Lee', role: 'Barber', initials: 'ML' },
   { name: 'Sam Okafor', role: 'Hair stylist', initials: 'SO' },
   { name: 'Jordan Price', role: 'Esthetician & nail care', initials: 'JP' },
