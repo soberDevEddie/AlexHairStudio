@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude local settings (machine-specific, not for the repo)
+.claude/settings.local.json
+
+# Raw haircut example media - unoptimized, too large for git history.
+# Compress/convert to web-ready mp4/webm and add those explicitly instead.
+public/haircut-example-*.gif
+public/haircut-example-*.mov

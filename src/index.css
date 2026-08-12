@@ -177,21 +177,14 @@ a {
 
 .hero {
   position: relative;
-  background: radial-gradient(120% 140% at 50% 0%, #2a2e38 0%, var(--ink) 55%, #0e1112 100%);
+  background-color: var(--ink);
+  background-image:
+    linear-gradient(180deg, rgba(14, 17, 18, 0.78) 0%, rgba(14, 17, 18, 0.58) 45%, rgba(14, 17, 18, 0.88) 100%),
+    url("/salon-interior-2.jpg");
+  background-size: cover;
+  background-position: center 35%;
   color: var(--on-dark);
   overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    115deg,
-    rgba(251, 233, 234, 0.025) 0 1px,
-    transparent 1px 10px
-  );
-  pointer-events: none;
 }
 
 .hero::after {
