@@ -15,7 +15,7 @@ const Footer = () => {
           <Link to="/booking">Booking</Link>
         </nav>
         <p className="fine-print">
-          &copy; {new Date().getFullYear()} Alex's Hair Studio. Tue&ndash;Sat, 9am&ndash;7pm.
+          &copy; {new Date().getFullYear()} Alex's Hair Studio. Sun &amp; Sat, 7am&ndash;6pm &middot; Mon &amp; Wed&ndash;Fri, 7am&ndash;8pm &middot; Closed Tuesdays.
         </p>
       </div>
     </footer>

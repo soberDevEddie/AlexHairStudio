@@ -173,6 +173,105 @@ a {
   filter: invert(1);
 }
 
+/* ---------- hours dropdown ---------- */
+
+.hours-dropdown {
+  position: relative;
+  margin-left: 0.4rem;
+}
+
+.hours-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--on-dark-muted);
+  background: transparent;
+  border: 1px solid var(--ink-border);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.hours-toggle:hover {
+  color: var(--on-dark);
+  border-color: var(--on-dark-muted);
+}
+
+.hours-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--coral);
+}
+
+.hours-dot.is-open {
+  background: #4ec97b;
+}
+
+.hours-chevron {
+  transition: transform 0.2s ease;
+}
+
+.hours-chevron.is-open {
+  transform: rotate(180deg);
+}
+
+.hours-panel {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  min-width: 230px;
+  background: var(--ink-raised);
+  border: 1px solid var(--ink-border);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  z-index: 50;
+}
+
+.hours-panel-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--on-dark);
+  margin: 0 0 0.6rem;
+}
+
+.hours-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-panel li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: var(--on-dark-muted);
+  padding: 0.35rem 0;
+}
+
+.hours-panel li.is-today {
+  color: var(--on-dark);
+  font-weight: 600;
+}
+
+.hours-panel li.is-today .hours-day {
+  color: var(--coral);
+}
+
+.hours-panel .hours-closed {
+  color: rgba(251, 233, 234, 0.4);
+}
+
 /* ---------- hero ---------- */
 
 .hero {

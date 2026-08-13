@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import Hours from './Hours'
 
 const navLinkClass = ({ isActive }) =>
   `nav-link${isActive ? ' active' : ''}`
@@ -41,6 +42,7 @@ const Navbar = () => {
             <NavLink className={navLinkClass} to="/booking" onClick={() => setOpen(false)}>
               Booking
             </NavLink>
+            <Hours />
           </div>
         </div>
       </div>
