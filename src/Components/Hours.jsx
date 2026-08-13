@@ -20,7 +20,18 @@ const getStatus = () => {
   return { dayIndex, isOpen }
 }
 
-const Hours = () => {
+const ScheduleList = ({ dayIndex }) => (
+  <ul>
+    {SCHEDULE.map((d, i) => (
+      <li key={d.day} className={i === dayIndex ? 'is-today' : ''}>
+        <span className="hours-day">{d.day}</span>
+        <span className={d.closed ? 'hours-closed' : ''}>{d.label}</span>
+      </li>
+    ))}
+  </ul>
+)
+
+const Hours = ({ variant = 'dropdown' }) => {
   const [open, setOpen] = useState(false)
   const wrapRef = useRef(null)
   const { dayIndex, isOpen } = getStatus()
@@ -32,6 +43,19 @@ const Hours = () => {
     document.addEventListener('mousedown', handleOutsideClick)
     return () => document.removeEventListener('mousedown', handleOutsideClick)
   }, [])
+
+  if (variant === 'inline') {
+    return (
+      <div className="hours-inline">
+        <p className="hours-panel-title">Hours</p>
+        <p className="hours-status">
+          <span className={`hours-dot${isOpen ? ' is-open' : ''}`} aria-hidden="true" />
+          {isOpen ? 'Open now' : 'Closed now'}
+        </p>
+        <ScheduleList dayIndex={dayIndex} />
+      </div>
+    )
+  }
 
   return (
     <div className="hours-dropdown" ref={wrapRef}>
@@ -61,14 +85,7 @@ const Hours = () => {
       {open && (
         <div className="hours-panel">
           <p className="hours-panel-title">Hours</p>
-          <ul>
-            {SCHEDULE.map((d, i) => (
-              <li key={d.day} className={i === dayIndex ? 'is-today' : ''}>
-                <span className="hours-day">{d.day}</span>
-                <span className={d.closed ? 'hours-closed' : ''}>{d.label}</span>
-              </li>
-            ))}
-          </ul>
+          <ScheduleList dayIndex={dayIndex} />
         </div>
       )}
     </div>

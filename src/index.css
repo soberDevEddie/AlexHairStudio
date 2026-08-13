@@ -611,6 +611,60 @@ a {
   margin-left: 0;
 }
 
+.hours-inline {
+  border-top: 1px solid var(--ink-border);
+  padding-top: 1.2rem;
+}
+
+.hours-inline .hours-panel-title {
+  margin-bottom: 0.5rem;
+}
+
+.hours-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--on-dark-muted);
+  margin: 0 0 0.9rem;
+}
+
+.hours-inline ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-inline li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.88rem;
+  color: var(--on-dark-muted);
+  padding: 0.4rem 0;
+  border-top: 1px solid var(--ink-border);
+}
+
+.hours-inline li:first-child {
+  border-top: none;
+}
+
+.hours-inline li.is-today {
+  color: var(--on-dark);
+  font-weight: 600;
+}
+
+.hours-inline li.is-today .hours-day {
+  color: var(--coral);
+}
+
+.hours-inline .hours-closed {
+  color: rgba(251, 233, 234, 0.4);
+}
+
 .location-actions {
   display: flex;
   flex-wrap: wrap;

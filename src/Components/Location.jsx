@@ -42,7 +42,7 @@ const Location = () => {
             </a>
           </div>
 
-          <Hours />
+          <Hours variant="inline" />
 
           <div className="location-actions">
             <a
