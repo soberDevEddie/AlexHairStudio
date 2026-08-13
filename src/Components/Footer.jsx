@@ -12,7 +12,7 @@ const Footer = () => {
           <Link to="/services">Services</Link>
           <Link to="/gallery">Gallery</Link>
           <Link to="/pricing">Pricing</Link>
-          <Link to="/booking">Booking</Link>
+          <Link to="/location">Location</Link>
         </nav>
         <p className="fine-print">
           &copy; {new Date().getFullYear()} Alex's Hair Studio. Sun &amp; Sat, 7am&ndash;6pm &middot; Mon &amp; Wed&ndash;Fri, 7am&ndash;8pm &middot; Closed Tuesdays.

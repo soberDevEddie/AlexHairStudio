@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Services from './Components/Services'
 import Gallery from './Components/Gallery'
 import Pricing from './Components/Pricing'
-import Booking from './Components/Booking'
+import Location from './Components/Location'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="/booking" element={<Booking />} />
+        <Route path="/location" element={<Location />} />
       </Routes>
       <Footer />
     </>

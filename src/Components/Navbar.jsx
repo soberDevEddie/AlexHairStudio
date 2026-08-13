@@ -39,8 +39,8 @@ const Navbar = () => {
             <NavLink className={navLinkClass} to="/pricing" onClick={() => setOpen(false)}>
               Pricing
             </NavLink>
-            <NavLink className={navLinkClass} to="/booking" onClick={() => setOpen(false)}>
-              Booking
+            <NavLink className={navLinkClass} to="/location" onClick={() => setOpen(false)}>
+              Location
             </NavLink>
             <Hours />
           </div>

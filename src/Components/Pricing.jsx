@@ -62,8 +62,8 @@ const Pricing = () => {
                     </div>
                   ))}
                 </div>
-                <Link className="btn-pill" to="/booking">
-                  Book appointment
+                <Link className="btn-pill" to="/location">
+                  Visit us
                 </Link>
               </div>
             </div>
