@@ -46,7 +46,7 @@ a {
 }
 
 .hero-inner .eyebrow,
-.pricing-head .eyebrow {
+.service-detail-head .eyebrow {
   color: var(--coral);
 }
 
@@ -466,31 +466,31 @@ a {
   color: var(--on-light-muted);
 }
 
-/* ---------- pricing ---------- */
+/* ---------- services & pricing ---------- */
 
-.pricing-section {
+.service-detail-section {
   background: var(--ink);
   color: var(--on-dark);
   padding: 5rem 1.5rem;
 }
 
-.pricing-head {
+.service-detail-head {
   text-align: center;
   max-width: 520px;
   margin: 0 auto 3rem;
 }
 
-.pricing-head .section-heading {
+.service-detail-head .section-heading {
   font-size: 2rem;
   color: var(--on-dark);
 }
 
-.pricing-head .section-sub {
+.service-detail-head .section-sub {
   color: var(--on-dark-muted);
   margin: 0 auto;
 }
 
-.pricing-card {
+.service-detail-card {
   background: var(--ink-raised);
   border: 1px solid var(--ink-border);
   border-radius: 12px;
@@ -500,16 +500,31 @@ a {
   flex-direction: column;
 }
 
-.pricing-card h3 {
+.service-detail-card .service-icon {
+  margin: 0 0 1.2rem;
+}
+
+.service-detail-card h3 {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--coral);
+  margin-bottom: 0.6rem;
+}
+
+.service-detail-text {
+  color: var(--on-dark-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
   margin-bottom: 1.4rem;
 }
 
-.pricing-row {
+.price-list {
+  margin: 0 0 1.8rem;
+}
+
+.price-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -519,23 +534,25 @@ a {
   font-size: 0.92rem;
 }
 
-.pricing-row:first-of-type {
+.price-row dt,
+.price-row dd {
+  margin: 0;
+}
+
+.price-row:first-of-type {
   border-top: none;
 }
 
-.pricing-row .price {
+.price-row dd {
   font-variant-numeric: tabular-nums;
   color: var(--on-dark);
   font-weight: 600;
+  white-space: nowrap;
 }
 
-.pricing-card .btn-pill {
+.service-detail-card .btn-pill {
   margin-top: auto;
   align-self: flex-start;
-}
-
-.pricing-card > div:first-of-type {
-  margin-bottom: 1.8rem;
 }
 
 /* ---------- location ---------- */

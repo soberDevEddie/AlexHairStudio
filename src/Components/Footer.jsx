@@ -9,9 +9,8 @@ const Footer = () => {
         </span>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
+          <Link to="/services">Services &amp; pricing</Link>
           <Link to="/gallery">Gallery</Link>
-          <Link to="/pricing">Pricing</Link>
           <Link to="/location">Location</Link>
         </nav>
         <p className="fine-print">

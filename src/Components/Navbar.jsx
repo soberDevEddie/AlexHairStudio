@@ -31,13 +31,10 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink className={navLinkClass} to="/services" onClick={() => setOpen(false)}>
-              Services
+              Services &amp; pricing
             </NavLink>
             <NavLink className={navLinkClass} to="/gallery" onClick={() => setOpen(false)}>
               Gallery
-            </NavLink>
-            <NavLink className={navLinkClass} to="/pricing" onClick={() => setOpen(false)}>
-              Pricing
             </NavLink>
             <NavLink className={navLinkClass} to="/location" onClick={() => setOpen(false)}>
               Location
