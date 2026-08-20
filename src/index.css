@@ -530,8 +530,12 @@ a {
 }
 
 .pricing-card .btn-pill {
-  margin-top: 1.8rem;
+  margin-top: auto;
   align-self: flex-start;
+}
+
+.pricing-card > div:first-of-type {
+  margin-bottom: 1.8rem;
 }
 
 /* ---------- location ---------- */
